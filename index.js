@@ -10,7 +10,7 @@ const port = process.env.PORT || 8000;
 //database connection
 // const MONGO_CONNECTION_URL = process.env.MONGO_CONNECTION_URL;
 
-console.log(process.env.PORT);
+// console.log(process.env.PORT);
 
 function connectDB() {
     // Database connection 
