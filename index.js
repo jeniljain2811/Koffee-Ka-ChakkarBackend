@@ -12,6 +12,8 @@ const port = process.env.PORT || 8000;
 
 // console.log(process.env.PORT);
 
+console.log(process.env.MONGO_CONNECTION_URL);
+
 function connectDB() {
     // Database connection 
     mongoose.connect(process.env.MONGO_CONNECTION_URL, { 
@@ -42,6 +44,7 @@ app.use(Gun.serve);
 
 const server = app.listen(port,()=>{
     console.log(`example app listening at http://localhost:${port}`);
+    console.log(`example app listening at ${process.env.BASE_URL}`);
 })
 
 
